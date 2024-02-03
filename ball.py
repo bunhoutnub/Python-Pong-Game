@@ -20,10 +20,11 @@ class Ball(Turtle):
   # when the ball needs to bounce off the top and bottom walls, we reverse the y cor by subtract instead of add.
   def bounce_y(self):
     self.y_move *= -1     
-    
+
+  # Incrase speed everytime the ball has been touched by the paddles
   def bounce_x(self):
     self.x_move *= -1
-    self.move_speed *= 0.9 # Incrase speed everytime the ball has been touched by the paddles
+    self.move_speed *= 0.9 
     
   def reset_position(self):
     self.goto(0,0)
