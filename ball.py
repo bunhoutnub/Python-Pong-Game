@@ -16,9 +16,10 @@ class Ball(Turtle):
     new_x = self.xcor() + self.x_move
     new_y = self.ycor() + self.y_move
     self.goto(new_x, new_y)
-    
+
+  # when the ball needs to bounce off the top and bottom walls, we reverse the y cor by subtract instead of add.
   def bounce_y(self):
-    self.y_move *= -1     # when the ball needs to bounce off the top and bottom walls, we reverse the y cor by subtract instead of add.
+    self.y_move *= -1     
     
   def bounce_x(self):
     self.x_move *= -1
